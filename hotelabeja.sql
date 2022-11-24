@@ -442,6 +442,8 @@ ALTER TABLE `datos`
 --
 ALTER TABLE `hotel`
   ADD CONSTRAINT `hotel_ibfk_1` FOREIGN KEY (`idpais`) REFERENCES `pais` (`id`);
+  
+  ALTER TABLE `hotel` CHANGE `idusuario` `idusuario` INT(11) NULL DEFAULT NULL;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
